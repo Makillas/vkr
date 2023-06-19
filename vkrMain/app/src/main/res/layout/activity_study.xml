@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StudyActivity"
+    android:id="@+id/studyDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewStudyHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/questionElement"
+            android:textSize="@dimen/textView"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textViewStudy"/>
+
+        <TextView
+            android:id="@+id/textViewStudy"
+            android:scrollbars="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/backgroundTextView"
+            android:fontFamily="@font/robotoregular"
+            android:onClick="onClickStudyTextView"
+            android:padding="12dp"
+            android:textSize="@dimen/textView"
+            app:layout_constraintBottom_toTopOf="@id/elementCancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewStudyHint" />
+
+        <Button
+            android:id="@+id/elementCancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/mybutton"
+            android:onClick="onClickDontKnowStudy"
+            android:text="@string/elementDontKnow"
+            android:fontFamily="@font/robotomedium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/elementAction"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/elementAction"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/mybutton"
+            android:onClick="onClickKnowStudy"
+            android:text="@string/elementKnow"
+            android:fontFamily="@font/robotomedium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/elementCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navMenuNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:menu="@menu/nav_menu"
+        android:background="@color/backgroundNavigationView"
+        app:drawerLayoutCornerSize="0dp" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

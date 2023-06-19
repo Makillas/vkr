@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/menuCategories" android:id="@+id/menuCategories" />
+    <item android:title="@string/menuStudy" android:id="@+id/menuStudy" />
+    <item android:title="@string/menuStatistics" android:id="@+id/menuStatistics" />
+
+</menu>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">vkrMain</string>
+    <string name="menuCategories">Коллекции</string>
+    <string name="menuStudy">Обучение</string>
+    <string name="menuStatistics">Статистика</string>
+    <string name="buttonMenu">Меню</string>
+    <string name="addCategory">Добавить коллекцию</string>
+
+    <string name="categoriesName">Item #$it</string>
+    <string name="ic_more">icon_more</string>
+    <string name="ID_UPDATE">Редактировать</string>
+    <string name="ID_DELETE">Удалить</string>
+    <string name="hintCreateCollection">Название коллекции</string>
+    <string name="hintCountRepeat">Кол-во \nповторений:</string>
+    <string name="hintThree">3</string>
+    <string name="hintFour">4</string>
+    <string name="hintFive">5</string>
+    <string name="hintSix">6</string>
+    <string name="hintSeven">7</string>
+
+    <string name="Good">All Ok</string>
+    <string name="createCollection">Создание коллекции</string>
+    <string name="updateCollection">Редактирование коллекции</string>
+    <string name="create">Создать</string>
+    <string name="delete">Удалить</string>
+    <string name="updateContinue">Подтвердить редактирование</string>
+    <string name="update">Редактировать</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="elementRepeat">Блок изучен</string>
+
+    <string name="elementKnow">Знаю</string>
+    <string name="elementDontKnow">Не знаю</string>
+
+
+    <string name="messageCollectionCreate">Создание коллекции прошло успешно</string>
+    <string name="messageCollectionUpdate">Редактирование коллекции прошло успешно</string>
+    <string name="messageEditEmpty">Вы не заполнили поле ввода</string>
+    <string name="messageEditError">Коллекция с таким именем уже существует</string>
+    <string name="messageEditErrorBlock">Карточка с таким вопросом уже существует</string>
+    <string name="messageBlockCreate">Карточка создана</string>
+    <string name="messageBlockUpdate">Карточка обновлена</string>
+    <string name="messageBlockLearn">Карточка изучена</string>
+    <string name="messageBlockLearnPlus">Карточка уже изучена!</string>
+    <string name="messageBlockLearnNew">Начать сначала</string>
+    <string name="messageBlockDontKnow">Изучите данный блок заново</string>
+
+    <string name="messageAdapterDeleteCategory">Удалить коллекцию?</string>
+
+    <string name="updateCollectionConfirmation">Редактирование кол-ва повторений приведет к обнулению повторений всех карточек в данной коллекции.</string>
+
+    <string name="messageAdapterDeleteBlock">Удалить карточку?</string>
+    <string name="addCollection">Добавить коллекцию</string>
+    <string name="addBlock">Добавить карточку</string>
+    <string name="messageAllCountRepeat">Все повторения в данном блоке завершены</string>
+    <string name="messageOneCountRepeat">Вы успешно повторили блок</string>
+
+    <string name="questionElement">Вопрос:</string>
+    <string name="answerElement">Ответ:</string>
+    <string name="empty">Пусто</string>
+
+</resources>

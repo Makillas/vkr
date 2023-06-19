@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/questionHintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/questionElement"
+        android:textSize="@dimen/textHintView"
+        app:layout_constraintBottom_toTopOf="@+id/questionElementTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        android:id="@+id/questionElementTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/backgroundTextView"
+        android:fontFamily="@font/robotoregular"
+        android:padding="12dp"
+        android:text="@string/questionElement"
+        android:textSize="@dimen/textView"
+        app:layout_constraintBottom_toTopOf="@id/answerHintTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionHintTextView" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/answerHintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/answerElement"
+        android:textSize="@dimen/textHintView"
+        app:layout_constraintBottom_toTopOf="@+id/answerElementTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionElementTextView" />
+
+    <TextView
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        android:id="@+id/answerElementTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/backgroundTextView"
+        android:fontFamily="@font/robotoregular"
+        android:padding="12dp"
+        android:text="@string/answerElement"
+        android:textSize="@dimen/textView"
+        app:layout_constraintBottom_toTopOf="@+id/elementAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answerHintTextView" />
+
+
+
+    <TextView
+        android:id="@+id/questionHintEditView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/questionElement"
+        android:textSize="@dimen/textHintView"
+        app:layout_constraintBottom_toTopOf="@+id/questionElementEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:scrollbars="vertical"
+        android:id="@+id/questionElementEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="@string/questionElement"
+        android:background="@color/backgroundTextView"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="top|left"
+        android:hint="@string/questionElement"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textSize="@dimen/textView"
+        app:layout_constraintBottom_toTopOf="@+id/answerHintEditView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionHintEditView" />
+
+    <TextView
+        android:id="@+id/answerHintEditView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/answerElement"
+        android:textSize="@dimen/textHintView"
+        app:layout_constraintBottom_toTopOf="@+id/answerElementEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionElementEditText" />
+
+    <EditText
+        android:scrollbars="vertical"
+        android:id="@+id/answerElementEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints="@string/questionElement"
+        android:background="@color/backgroundTextView"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="top|left"
+        android:hint="@string/answerElement"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textSize="@dimen/textView"
+        app:layout_constraintBottom_toTopOf="@+id/elementCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answerHintEditView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/elementCancel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onClickElementCancel"
+        android:textSize="@dimen/button"
+        android:fontFamily="@font/robotomedium"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/elementAction"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/elementAction"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/button"
+        android:fontFamily="@font/robotomedium"
+        android:background="@drawable/mybutton"
+        android:onClick="onClickElementAction"
+        android:text="@string/create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/elementCancel"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
